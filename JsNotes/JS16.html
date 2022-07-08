@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON(JavaScript Object Notation)</title>
+</head>
+<body>
+    <div class="container">This my Container</div>
+    <script>
+        let jasonobj = {
+            name: 'shahrukh',
+            yt: 'Mechanificial',
+            profession: 'Data Scientist',         
+            friend: 'Nobody'
+        }
+        console.log(jasonobj)
+
+        // to convert from object to string 
+        let myJasonStr = JSON.stringify(jasonobj)
+        console.log(myJasonStr)
+
+        myJasonStr = myJasonStr.replace('Nobody', 'shahrukh ka laptop')
+        console.log(myJasonStr)
+
+        // to convert from string to object
+        let myJasonObj = JSON.parse(myJasonStr)
+        console.log(myJasonObj)
+          
+    </script>
+</body>
+</html>

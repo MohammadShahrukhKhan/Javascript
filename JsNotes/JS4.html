@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var war = "Demo_class_one";
+    console.log(war);
+    // first occurence of a substring
+    var position = war.indexOf('D');
+    console.log(position)
+
+  // Last occurence of a substring
+  position = war.lastIndexOf('on');
+  topia = war.lastIndexOf('e')
+    console.log(position)
+    console.log(topia)
+
+    // substring from a string 
+    // slice is for positive as well as negative characters
+    var substrp = war.slice(1,8);
+    console.log(substrp)
+
+    // while substring is for positive characters only 
+    var substrp = war.substring(1,9);
+    console.log(substrp)
+
+    var saz = war.substr(1,7);
+    console.log(saz)
+
+    var replay = war.replace('one', 'two');
+    console.log(war)
+    console.log(replay)
+
+    console.log(replay.toUpperCase())
+
+    // to concat  
+    var goy = replay.concat(' to you')
+    console.log(goy)
+
+    // to remove wide spaces on both sides
+    var choi = "    Hey! i'm a programmer    ";
+    console.log(choi.trim())
+
+    // to take out any character code
+    var chor = war.charCodeAt(5);
+    console.log(chor)
+
+    console.log(choi[15])
+
+</script>
+</html>

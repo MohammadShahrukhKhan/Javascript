@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <div class="container">THIS IS MATH OBJECT TUTORIAL</div>
+    <script>
+        // Printing the Math Object 
+        let m = Math;
+        console.log(m)
+
+        // Printing the Constant from the Math Object 
+        console.log('The value of Math.E is ', Math.E)
+        console.log('The value of Math.LN10 is ', Math.LN10)
+        console.log('The value of Math.LN2 is ', Math.LN2)
+        console.log('The value of Math.LOG10E is ', Math.LOG10E)
+        console.log('The value of Math.LOG2E is ', Math.LOG2E)
+        console.log('The value of Math.PI is ', Math.PI)
+        console.log('The value of Math.SQRT1_2 is ', Math.SQRT1_2)
+        console.log('The value of Math.SQRT2 is ', Math.SQRT2)
+
+        // Printing the Functions from the Math Object 
+        
+        let p = 53.28
+        let q = 13.31
+        let r = 2
+        let s = 5
+        let u = 7.5
+        console.log(Math.round(p), Math.round(q))
+        console.log(Math.pow(r,s))
+        console.log(Math.sqrt(100))
+        console.log(Math.sqrt(98498))
+
+        // To round up to the nearest integer
+        console.log(Math.ceil(u))
+
+        // To round down to the nearest value 
+        console.log(Math.floor(u))
+
+        // Absolute Value 
+        console.log(Math.abs(u))
+        console.log(Math.abs(-u))
+
+        // Trigonometric functions
+        console.log(Math.sin(Math.PI/2))
+        console.log(Math.cos(Math.PI/2))
+        console.log(Math.tan(Math.PI/2))
+
+        // For maximum value of numbers
+        console.log(Math.max(14,13,10))
+
+        // For minimum value of numbers
+        console.log(Math.min(75,39,02))
+
+        // Generating a random Number 
+        let random = Math.random()
+        console.log(random)
+
+        let t = 1
+        let v = 100
+        let w = t + (v-t)*Math.random()
+        console.log(w)
+    </script>
+</body>
+</html>
