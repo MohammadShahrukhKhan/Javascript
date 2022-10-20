@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for, while, forEach, Do While Loops</title>
+</head>
+<body>
+    <div class="contain">
+        It is all about loops
+    </div>
+    <script>
+        console.log('JS9.html')
+        let i = 0;
+        for (let i = 0; i < 5; i++) {
+            console.log(i);    
+        }
+
+        let Nums = [ 'zero', 'one', 'two', 'three'];
+        for (let index = 0; index < Nums.length; index++) {
+           console.log('Main hu ' + Nums[index])
+        }
+//  for array elements in forEach loops
+        Nums.forEach(function f(element){
+           console.log( 'main hu modern JS ' + element)
+        })
+
+        // in ForOf loops
+
+        // let gum = ['fevicol', 'feviquick', 'fevigum', 'fevistick'];
+        for (element of Nums){
+            console.log('milo, ' + element + ' se');
+        }
+
+        // Lets see ForIn loops 
+        let toolkit = {
+            plier : 'pilaas',
+            screw :'penchkas',
+            hammer : 'hattoda'
+        }
+
+        for(element in toolkit){
+            console.log(`The ${element} is ${toolkit[element]}`);
+        }
+
+        // while loop in JS 
+        let f = 0;
+        while(f<6){
+            console.log(` ${f} is less than 6`)
+            f++
+        }
+
+        // do while loop in JS 
+        h = 0;
+        do{
+            console.log(`${h} is less than 8`)
+            h++
+        }
+        while(h<8)
+
+    </script>
+</body>
+</html>

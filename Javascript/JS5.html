@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <div>
+        <ul>
+            <li class="items">this is item 1</li>
+            <li class="items">this is item 2</li>
+            <li class="items">this is item 3</li>
+            <li class="items">this is item 4</li>
+            <li class="items">this is item 5</li>
+            <li class="items">this is item 6</li>
+            <li class="items">this is item 7</li>
+            <li class="items">this is item 8</li>
+        </ul>
+    </div>
+    <script>
+        let z = 'me';
+        {
+            let z = 'i';
+            console.log(z)
+        }
+        console.log(z)
+
+        // constcannot be changed 
+        const y = 'This is constant';
+        // const y = 'This cannot be changed';
+        console.log(y)
+
+        // let age = '40';
+        let age = '18';
+        if(age>18){
+            console.log('You can enter')
+        }
+        else if(age==18){
+            console.log('Enter at your own risk')
+        }
+        else{
+            console.log('Go and watch POGO kid')
+        }
+
+
+        const height = 164 ;
+        switch (height) {
+            case 157:
+                console.log('can have a ride')
+                break;
+
+                case 155:
+                console.log('can have a ride')
+                break;
+
+                case 156:
+                console.log('can have a ride')
+                break;
+
+                case 154:
+                console.log('cannot have a ride')
+                break;
+        
+            default:
+                console.log('Error')
+                break;
+        }
+    </script>
+</body>
+</html>
